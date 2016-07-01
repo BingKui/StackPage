@@ -1,0 +1,8 @@
+{
+  "name": "stackpage",
+  "version": "1.0.0",
+  "description": "堆积页面",
+  "main": "main.js",
+  "author": "康兵奎",
+  "license": "ISC"
+}
