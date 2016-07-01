@@ -1,0 +1,55 @@
+/*顶部自定义状态栏*/
+
+.frame-drag {
+	height: 35px;
+	width: 100%;
+	-webkit-app-region: drag;
+	z-index: 1;
+	background-color: #ccc;
+}
+
+.frame-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 35px;
+	width: 70px;
+	z-index: 10001;
+}
+
+.frame-mini,
+.frame-close {
+	display: block;
+	float: left;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.frame-mini:hover,
+.frame-close:hover {
+	background-color: #007AFF;
+}
+
+
+/*公共样式*/
+
+
+/*按钮*/
+
+.btn {
+	display: block;
+	width: 150px;
+	height: 35px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #007AFF;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	margin-top: 10px;
+	line-height: 35px;
+	border-radius: 5px;
+}

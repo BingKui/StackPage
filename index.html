@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <buttton id="openNewWin">打开新窗口</button>
-  </body>
-  <script>
-  	const BrowserWindow = require('electron').remote.BrowserWindow
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<style type="text/css">
+			.select-dev {
+				width: 200px;
+				margin: 100px auto;
+			}
+			
+			.title {
+				width: 100%;
+				height: 100px;
+				font-size: 25px;
+				line-height: 100px;
+				text-align: center;
+				margin-top: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="title">
+			选择你要开发的页面类型
+		</div>
+		<div class="select-dev">
+			<a class="btn" href="html/pc.html">PC</a>
+			<a class="btn" href="html/phone.html">Phone</a>
+			<a class="btn" href="html/pad.html">Pad</a>
+		</div>
+		<!--<buttton id="openNewWin">打开新窗口</button>-->
+	</body>
+	<!--<script>
+		const BrowserWindow = require('electron').remote.BrowserWindow
 		const newWindowBtn = document.getElementById('openNewWin')
 
 		const path = require('path')
 
-		newWindowBtn.addEventListener('click', function (event) {
-		  const modalPath = path.join('file://', __dirname, './html/demo.html')
-		  let win = new BrowserWindow({ frame: false })
-		  win.on('close', function () { win = null })
-		  win.loadURL(modalPath)
-		  win.show()
+		newWindowBtn.addEventListener('click', function(event) {
+			const modalPath = path.join('file://', __dirname, './html/demo.html')
+			let win = new BrowserWindow({
+				frame: false
+			})
+			win.on('close', function() {
+				win = null
+			})
+			win.loadURL(modalPath)
+			win.show()
 		})
-  </script>
+	</script>-->
+
 </html>
